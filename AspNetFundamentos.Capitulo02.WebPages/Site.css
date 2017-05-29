@@ -1,0 +1,32 @@
+﻿/*html { font-size: 62.5%; }*/
+
+body {
+    font-family: Calibri;
+    margin: 0;
+    /*font-size: 1.6rem; este é o padrão (16px = 12pt)*/
+}
+
+p {
+    /*font-size:1em;*/
+}
+
+header {
+    padding: 20px;
+    background-color: #00a1c9;
+    color: #fff;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+section {
+    margin: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}

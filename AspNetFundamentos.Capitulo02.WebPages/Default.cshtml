@@ -1,0 +1,45 @@
+﻿@*<!DOCTYPE html>*@
+@*<html>*@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/Site.css" />
+    <title>Razor web pages</title>
+</head>
+<body>
+    @*<body>*@
+    <header>
+        <h1>Razor web pages</h1>
+        <h2>HTML + JS + CSS</h2>
+    </header>
+    <section id="tiposTecnologias">
+        <h3>Cliente x Servidor</h3>
+        @* dl: description list *@
+        <dl>
+            @* dt: description term *@
+            <dt>Cliente</dt>
+            @* dd: definition of the term *@
+            <dd>HTML</dd>
+            <dd>Javascript</dd>
+            <dd>CSS</dd>
+        </dl>
+        <p>Servidor</p>
+        <ul>
+            <li>C#</li>
+            <li>ASP.NET</li>
+            <li>Web Pages</li>
+            <li>Web Forms</li>
+            <li>MVC</li>
+            <li>Razor</li>
+        </ul>
+    </section>
+    <footer>
+        <hr />
+        @*&copy; Impacta Treinamentos*@
+        <p>&copy; @*2017*@ @DateTime.Now.Year Impacta Treinamentos</p>
+    </footer>
+    @*</body>*@
+</body>
+</html>
+@*</html>*@
