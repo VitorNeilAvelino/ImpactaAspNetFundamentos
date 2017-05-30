@@ -90,8 +90,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\Default.js" />
     <Content Include="packages.config" />
-    <Content Include="Default.cshtml" />
+    <Content Include="Home\Default.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -100,7 +101,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Site.css" />
+    <Content Include="Styles\Site.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
