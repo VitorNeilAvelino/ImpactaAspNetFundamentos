@@ -8,6 +8,11 @@ body {
 
 p {
     /*font-size:1em;*/
+    display: inline-block;
+}
+
+ul{
+    margin-top: 0;
 }
 
 header {
@@ -23,6 +28,15 @@ h1, h2 {
 section {
     margin: 20px;
 }
+
+    section p {
+        cursor: pointer;
+    }
+
+        section p:hover {
+            color: gray;
+            font-weight: bold;
+        }
 
 footer {
     position: fixed;

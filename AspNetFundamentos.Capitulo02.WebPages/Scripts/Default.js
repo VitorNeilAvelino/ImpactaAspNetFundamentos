@@ -5,14 +5,23 @@
 //    dts[i].addEventListener("click", function (e) { alternarVisibilidade(e.source) });
 //}
 
-var servidorP = document.getElementById("servidorP")
-servidorP.addEventListener("click", function (evento) { alternarVisibilidade(evento.srcElement.dataset.destino); });
+// 1o. assim:
+//var servidorP = document.getElementById("servidorP")
+//servidorP.addEventListener("click", function (evento) { alternarVisibilidade(evento.srcElement.dataset.destino); });
+
+// 2o. depois refatorar:
+window.onload = inicializar;
+
+function inicializar() {
+    var servidorP = document.getElementById("servidorP")
+    servidorP.addEventListener("click", function (evento) { alternarVisibilidade(evento.srcElement.dataset.destino); });
+}
 
 function alternarVisibilidade(elementoId) {
     var elemento = document.getElementById(elementoId);
 
     if (elemento.style.display == "none") {
-        elemento.style.display = "block";
+        elemento.style.display = "inline-block";
     }
     else {
         elemento.style.display = "none";

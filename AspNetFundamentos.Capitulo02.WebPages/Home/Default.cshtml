@@ -18,8 +18,9 @@
         <h1>@titulo</h1>
         <h2>HTML + JS + CSS</h2>
     </header>
+    @* Pode haver vários sections, um id pode ajudar a identificá-los. *@
     <section id="tiposTecnologias">
-        <h3>Cliente x Servidor</h3>
+        <h3>Tecnologias: Cliente x Servidor</h3>
         @* dl: definition list *@
         <dl>
             @* dt: description term *@
@@ -29,14 +30,23 @@
             <dd>Javascript</dd>
             <dd>CSS</dd>
         </dl>
-        <p id="servidorP" data-destino="servidorUl">Servidor</p>
+        <p id="servidorP" data-destino="servidorUl">Servidor</p><br />
         <ul id="servidorUl">
+            <li>
+                ASP.NET
+                <ul>
+                    <li>Web Forms</li>
+                    <li>
+                        MVC
+                        <ul>
+                            <li>Web Pages</li>
+                            <li>Razor</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
             <li>C#</li>
-            <li>ASP.NET</li>
-            <li>Web Pages</li>
-            <li>Web Forms</li>
-            <li>MVC</li>
-            <li>Razor</li>
+            <li>VB.NET</li>
         </ul>
     </section>
     <footer>
@@ -45,6 +55,7 @@
         <p>&copy; @*2017*@ @DateTime.Now.Year Impacta Treinamentos</p>
     </footer>
     @*</body>*@
+    @*<script type="text/javascript" src="~/Scripts/Default.js" async></script>*@
 </body>
 </html>
 @*</html>*@
