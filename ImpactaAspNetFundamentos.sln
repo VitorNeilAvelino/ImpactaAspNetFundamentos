@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetFundamentos.Capitulo02.WebPages", "AspNetFundamentos.Capitulo02.WebPages\AspNetFundamentos.Capitulo02.WebPages.csproj", "{48F4046B-4981-4026-81E4-3B714BC398BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetFundamentos.Capitulo03.WebForms", "AspNetFundamentos.Capitulo03.WebForms\AspNetFundamentos.Capitulo03.WebForms.csproj", "{FF52741D-78D0-4B7B-9460-3EBEBBB0E869}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{48F4046B-4981-4026-81E4-3B714BC398BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48F4046B-4981-4026-81E4-3B714BC398BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48F4046B-4981-4026-81E4-3B714BC398BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF52741D-78D0-4B7B-9460-3EBEBBB0E869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF52741D-78D0-4B7B-9460-3EBEBBB0E869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF52741D-78D0-4B7B-9460-3EBEBBB0E869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF52741D-78D0-4B7B-9460-3EBEBBB0E869}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
