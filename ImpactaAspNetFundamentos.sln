@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetFundamentos.Capitulo0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetFundamentos.Capitulo03.WebForms", "AspNetFundamentos.Capitulo03.WebForms\AspNetFundamentos.Capitulo03.WebForms.csproj", "{FF52741D-78D0-4B7B-9460-3EBEBBB0E869}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetFundamentos.Capitulo04.Mvc", "AspNetFundamentos.Capitulo04.Mvc\AspNetFundamentos.Capitulo04.Mvc.csproj", "{EDF9C3A0-E90E-429E-88E0-5841A6B7223E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FF52741D-78D0-4B7B-9460-3EBEBBB0E869}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF52741D-78D0-4B7B-9460-3EBEBBB0E869}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF52741D-78D0-4B7B-9460-3EBEBBB0E869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDF9C3A0-E90E-429E-88E0-5841A6B7223E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDF9C3A0-E90E-429E-88E0-5841A6B7223E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDF9C3A0-E90E-429E-88E0-5841A6B7223E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDF9C3A0-E90E-429E-88E0-5841A6B7223E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
