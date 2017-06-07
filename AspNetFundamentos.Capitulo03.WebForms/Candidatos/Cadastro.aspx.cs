@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Web.UI;
 
 namespace AspNetFundamentos.Capitulo03.WebForms.Candidatos
 {
@@ -33,11 +32,11 @@ namespace AspNetFundamentos.Capitulo03.WebForms.Candidatos
                     arquivoCandidatos.WriteLine(registro);
                 }
 
-                ExibirMensagem("Cadastro efetuado com sucesso");
+                ExibirMensagem("Cadastro efetuado com sucesso.");
             }
             catch
             {
-                ExibirMensagem("Erro ao efetuar o cadastro");
+                ExibirMensagem("Erro ao efetuar o cadastro.");
             }
         }
 
