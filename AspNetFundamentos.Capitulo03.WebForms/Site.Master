@@ -56,6 +56,12 @@
                         <li><a runat="server" href="~/About.aspx">Quem somos</a></li>
                         <li><a runat="server" href="~/Contact.aspx">Contatos</a></li>
                         <li><a runat="server" href="~/Candidatos/Cadastro.aspx">Cadastro</a></li>
+                        
+<%--                        <li><a href="~/Candidatos/Cadastro.aspx">Sem runat=server</a></li>
+                        <li><a href="Candidatos/Cadastro.aspx">Sem barra - relativo</a></li>
+                        <li><a href="./Candidatos/Cadastro.aspx">Um ponto - relativo</a></li>
+                        <li><a href="../Candidatos/Cadastro.aspx">Dois pontos - relativo</a></li>
+                        <li><a href="/Candidatos/Cadastro.aspx">Com barra - absoluto</a></li>--%>
                     </ul>
                 </div>
             </div>
