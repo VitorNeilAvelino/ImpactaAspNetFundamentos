@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace AspNetFundamentos.Capitulo04.Mvc.Controllers
 {
-    public class VeiculosController : Controller
+    public class BlogController : Controller
     {
         // GET: Veiculos
         public ActionResult Index()

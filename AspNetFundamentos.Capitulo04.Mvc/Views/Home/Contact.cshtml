@@ -3,6 +3,14 @@
 }
 <h2>@ViewBag.Title</h2>
 
+@if (ViewBag.Sucesso == true)
+{
+    <div class="alert alert-success fade in">
+        <a href="#" class="close" data-dismiss="alert">&times;</a>
+        <strong>Obrigado!</strong> Em breve retornarei seu contato.
+    </div>
+}
+
 <p>Por favor, preencha o formulário para entrar em contato</p>
 <hr />
 <form method="post">
@@ -18,9 +26,12 @@
     </div>
     <div class="form-group">
         <label for="Mensagem" class="control-label">Mensagem:</label>
-        <input type="text" id="Mensagem" name="Mensagem" class="form-control" />
+        <textarea id="Mensagem" name="Mensagem" class="form-control"></textarea>
     </div>
     <div class="form-group">
         <input type="submit" class="btn btn-default" value="Enviar" />
     </div>
 </form>
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/Home/Contact.js"></script>
+}
