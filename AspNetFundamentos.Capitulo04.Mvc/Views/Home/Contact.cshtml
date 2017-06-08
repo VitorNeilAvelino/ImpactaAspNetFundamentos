@@ -16,7 +16,7 @@
 
 <p>Por favor, preencha o formulário para entrar em contato</p>
 <hr />
-@using (Html.BeginForm())
+@using (Html.BeginForm(@*"Contact", "Home", FormMethod.Get*@))
 {
     @Html.AntiForgeryToken()
 
