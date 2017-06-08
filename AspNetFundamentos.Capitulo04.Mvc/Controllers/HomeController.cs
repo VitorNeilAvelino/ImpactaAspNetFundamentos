@@ -25,8 +25,14 @@ namespace AspNetFundamentos.Capitulo04.Mvc.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Contact(ContatoViewModel contato)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(contato);
+            }
+
             using (var conexao = new SqlConnection(ConfigurationManager.ConnectionStrings["portfolioConnectionString"].ConnectionString))
             {
                 conexao.Open();
@@ -51,6 +57,8 @@ namespace AspNetFundamentos.Capitulo04.Mvc.Controllers
             }
 
             ViewBag.Sucesso = true;
+
+            ModelState.Clear();
 
             return View();
         }

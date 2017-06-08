@@ -1,6 +1,9 @@
-﻿@{
+﻿@model AspNetFundamentos.Capitulo04.Mvc.Models.ContatoViewModel
+
+@{
     ViewBag.Title = "Contato";
 }
+
 <h2>@ViewBag.Title</h2>
 
 @if (ViewBag.Sucesso == true)
@@ -13,25 +16,50 @@
 
 <p>Por favor, preencha o formulário para entrar em contato</p>
 <hr />
-<form method="post">
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
     <div class="form-group">
-        <label for="Nome" class="control-label">Nome:</label>
-        <input type="text" id="Nome" name="Nome"
-               class="form-control" />
+        @Html.LabelFor(m => m.Nome, htmlAttributes: new { @class = "control-label" })
+        @Html.EditorFor(m => m.Nome, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(m => m.Nome, "", new { @class = "text-danger" })
     </div>
     <div class="form-group">
-        <label for="Email" class="control-label">Email:</label>
-        <input type="text" id="Email" name="Email"
-               class="form-control" />
+        @Html.LabelFor(m => m.Email, htmlAttributes: new { @class = "control-label" })
+        @Html.EditorFor(m => m.Email, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
     </div>
     <div class="form-group">
-        <label for="Mensagem" class="control-label">Mensagem:</label>
-        <textarea id="Mensagem" name="Mensagem" class="form-control"></textarea>
+        @Html.LabelFor(m => m.Mensagem, htmlAttributes: new { @class = "control-label" })
+        @Html.TextAreaFor(m => m.Mensagem, htmlAttributes: new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Mensagem, "", new { @class = "text-danger" })
     </div>
     <div class="form-group">
-        <input type="submit" class="btn btn-default" value="Enviar" />
+        <input type="submit" class="btn btn-default" value="Gravar" />
     </div>
-</form>
+}
+
+@*<form method="post">
+        <div class="form-group">
+            <label for="Nome" class="control-label">Nome:</label>
+            <input type="text" id="Nome" name="Nome"
+                   class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="Email" class="control-label">Email:</label>
+            <input type="text" id="Email" name="Email"
+                   class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="Mensagem" class="control-label">Mensagem:</label>
+            <textarea id="Mensagem" name="Mensagem" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-default" value="Enviar" />
+        </div>
+    </form>*@
 @section scripts{
+    @Scripts.Render("~/bundles/jqueryval")
     <script type="text/javascript" src="~/Scripts/Home/Contact.js"></script>
 }

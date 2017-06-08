@@ -24,7 +24,8 @@
                 <asp:TextBox ID="emailTextBox" runat="server" class="form-control" placeholder="Email"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="emailRequiredFieldValidator" runat="server" ErrorMessage="O campo Email é obrigatório."
                     ControlToValidate="emailTextBox" Display="Dynamic" CssClass="validator"></asp:RequiredFieldValidator>
-                <asp:RegularExpressionValidator ID="emailRegularExpressionValidator" runat="server" ErrorMessage="Email com formato inválido." CssClass="validator" ControlToValidate="emailTextBox" Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                <asp:RegularExpressionValidator ID="emailRegularExpressionValidator" runat="server" ErrorMessage="Email com formato inválido." CssClass="validator" ControlToValidate="emailTextBox" Display="Dynamic" 
+                    ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
             </div>
             <div class="form-group">
                 <asp:Label ID="Label4" runat="server" Text="Estado" AssociatedControlID="estadoDropDownList"></asp:Label>
