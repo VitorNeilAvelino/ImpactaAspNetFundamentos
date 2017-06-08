@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using AspNetFundamentos.Capitulo04.Mvc.Models;
 using System.Web.Mvc;
 
 namespace AspNetFundamentos.Capitulo04.Mvc.Controllers
@@ -22,8 +19,12 @@ namespace AspNetFundamentos.Capitulo04.Mvc.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
 
+        [HttpPost]
+        public ActionResult Contact(ContatoViewModel contato)
+        {
             return View();
         }
     }
