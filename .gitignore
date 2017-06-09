@@ -241,3 +241,4 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 /AspNetFundamentos.Capitulo03.WebForms/Candidatos/Cadastro.csv
+/AspNetFundamentos.Capitulo04.Mvc/Content/Imagens/Portfolio

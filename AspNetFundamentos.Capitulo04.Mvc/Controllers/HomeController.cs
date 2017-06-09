@@ -1,5 +1,7 @@
-﻿using System.Configuration;
+﻿using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
+using System.IO;
 using AspNetFundamentos.Capitulo04.Mvc.Models;
 using System.Web.Mvc;
 
@@ -14,20 +16,34 @@ namespace AspNetFundamentos.Capitulo04.Mvc.Controllers
 
         public ActionResult Portfolio()
         {
-            ViewBag.Message = "Your application description page.";
+            const string diretorioImagens = "~/Content/Imagens/Portfolio";
+            var caminhos = Directory.EnumerateFiles(Server.MapPath(diretorioImagens));
+            var porftolioViewModel = new PorftolioViewModel();
+            porftolioViewModel.CaminhosImagem = new List<string>();
 
-            return View();
+            foreach (var caminho in caminhos)
+            {
+                porftolioViewModel.CaminhosImagem.Add($"{diretorioImagens}/{Path.GetFileName(caminho)}");
+            }
+
+            return View(porftolioViewModel);
         }
 
+        [HttpGet]
         public ActionResult Contact()
         {
             return View();
         }
 
         [HttpPost]
+        //[ActionName("Contact")]
         [ValidateAntiForgeryToken]
-        public ActionResult Contact(ContatoViewModel contato)
+        //public ActionResult Contact(FormCollection controles)
+        //public ActionResult Contact(string mensagem, string nome, string email)
+        public ActionResult /*GravarContato*/ Contact(ContatoViewModel contato)
         {
+            //var nome = controles["nome"];
+
             if (!ModelState.IsValid)
             {
                 return View(contato);

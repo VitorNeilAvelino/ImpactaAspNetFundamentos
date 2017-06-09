@@ -1,7 +1,19 @@
-﻿@{
+﻿@model AspNetFundamentos.Capitulo04.Mvc.Models.PorftolioViewModel
+@{
     ViewBag.Title = "Portfólio";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
-
-<p>Use this area to provide additional information.</p>
+<link rel="stylesheet" href="~/Content/jquery.fancybox.css" type="text/css" media="screen" />
+<h2>@ViewBag.Title</h2>
+<div class="row">
+    @foreach (var caminho in Model.CaminhosImagem)
+    {
+        <a href="@Url.Content(caminho)" class="fancybox">
+            <img src="@Url.Content(caminho)" class="img-responsive" alt="@caminho" />
+        </a>
+    }
+</div>
+@section scripts
+{
+    <script type="text/javascript" src="~/Scripts/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="~/Scripts/Home/Portfolio.js"></script>
+}
