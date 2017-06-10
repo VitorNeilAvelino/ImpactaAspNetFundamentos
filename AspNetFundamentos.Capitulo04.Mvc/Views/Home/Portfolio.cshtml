@@ -2,7 +2,9 @@
 @{
     ViewBag.Title = "Portfólio";
 }
-<link rel="stylesheet" href="~/Content/jquery.fancybox.css" type="text/css" media="screen" />
+@section css{
+    <link rel="stylesheet" href="~/Content/jquery.fancybox.css" type="text/css" media="screen" />
+}
 <h2>@ViewBag.Title</h2>
 <div class="row">
     @foreach (var caminho in Model.CaminhosImagem)
