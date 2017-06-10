@@ -6,9 +6,12 @@ namespace AspNetFundamentos.Capitulo04.Mvc.Models
     {
         [Required]
         public string Nome { get; set; }
+
         [Required]
-        [RegularExpression(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*", ErrorMessage = "Email com formato inválido.")]
+        [EmailAddress]
+        //[RegularExpression(@"\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*", ErrorMessage = "Email com formato inválido.")]
         public string Email { get; set; }
+
         [Required]
         public string Mensagem { get; set; }
     }
