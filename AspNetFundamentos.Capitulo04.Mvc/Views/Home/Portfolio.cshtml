@@ -6,11 +6,23 @@
     <link rel="stylesheet" href="~/Content/jquery.fancybox.css" type="text/css" media="screen" />
 }
 <h2>@ViewBag.Title</h2>
+
+@if (Session["Nome"] != null)
+{
+    <h3>Olá, @Session["Nome"], espero que goste de meus trabalhos - Session</h3>
+}
+
+@if (Request.Cookies["cadastroPortfolio"] != null)
+{
+    <h3>Olá, @Server.UrlDecode(Request.Cookies["cadastroPortfolio"].Values["nome"]), espero que goste de meus trabalhos - Cookie</h3>
+}
+
+@* Se tirar o row, o footer sai do alinhamento no fundo e sobe ao lado da primeira coluna de imagens. *@
 <div class="row">
     @foreach (var caminho in Model.CaminhosImagem)
     {
-        <a href="@Url.Content(caminho)" class="fancybox">
-            <img src="@Url.Content(caminho)" class="img-responsive" alt="@caminho" />
+        <a href="@caminho" class="fancybox">
+            <img src="@caminho" class="img-responsive" alt="@caminho" />
         </a>
     }
 </div>
