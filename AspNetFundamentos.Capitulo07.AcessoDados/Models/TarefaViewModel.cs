@@ -27,8 +27,7 @@ namespace AspNetFundamentos.Capitulo07.AcessoDados.Models
         public string Nome { get; set; }
 
         [Required]
-        [Range(0, 3)]
-        public int Prioridade { get; set; }
+        public Prioridade Prioridade { get; set; }
 
         [Required]
         [DisplayName("Concluída")]

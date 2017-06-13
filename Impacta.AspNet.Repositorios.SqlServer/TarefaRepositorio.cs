@@ -123,7 +123,7 @@ namespace Impacta.AspNet.Repositorios.SqlServer
 
             tarefa.Id = Convert.ToInt32(registro["Id"]);
             tarefa.Nome = registro["Nome"].ToString();
-            tarefa.Prioridade = Convert.ToInt32(registro["Prioridade"]);
+            tarefa.Prioridade = (Prioridade)registro["Prioridade"];
             tarefa.Concluida = Convert.ToBoolean(registro["Concluida"]);
             tarefa.Observacoes = registro["Observacoes"].ToString();
 

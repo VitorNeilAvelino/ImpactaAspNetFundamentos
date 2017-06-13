@@ -15,7 +15,7 @@ namespace Impacta.AspNet.Repositorios.SqlServerTests
         {
             var tarefa = new Tarefa();
             tarefa.Nome = "Pagar cartão";
-            tarefa.Prioridade = 3;
+            tarefa.Prioridade = Prioridade.Baixa;
             tarefa.Concluida = false;
             tarefa.Observacoes = "Observações";
 
@@ -29,7 +29,7 @@ namespace Impacta.AspNet.Repositorios.SqlServerTests
         {
             var tarefa = new Tarefa();
             tarefa.Id = 2;
-            tarefa.Nome = "Pagar cartão editado";
+            tarefa.Nome = "Pagar cartão editado de novo";
             tarefa.Prioridade = 0;
             tarefa.Concluida = true;
             tarefa.Observacoes = "Observações editado";
@@ -51,13 +51,13 @@ namespace Impacta.AspNet.Repositorios.SqlServerTests
         [TestMethod]
         public void ExcluirTest()
         {
-            _tarefaRepositorio.Excluir(1);
+            _tarefaRepositorio.Excluir(2);
 
-            var tarefa1 = _tarefaRepositorio.Selecionar(1);
-            var tarefa2 = _tarefaRepositorio.Selecionar(2);
+            var tarefa1 = _tarefaRepositorio.Selecionar(2);
+            var tarefa2 = _tarefaRepositorio.Selecionar(5);
 
             Assert.IsNull(tarefa1);
-            Assert.AreEqual(tarefa2.Nome, "Pagar cartão editado");
+            Assert.AreEqual(tarefa2.Nome, "Nome1115");
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿@model AspNetFundamentos.Capitulo07.AcessoDados.Models.TarefaViewModel
+﻿@using Impacta.AspNet.Dominio
+@model AspNetFundamentos.Capitulo07.AcessoDados.Models.TarefaViewModel
 
 @{
     ViewBag.Title = "Create";
@@ -7,10 +8,10 @@
 <h2>Create</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>TarefaViewModel</h4>
         <hr />
@@ -26,8 +27,8 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Prioridade, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Prioridade, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Prioridade, "", new { @class = "text-danger" })
+                    @Html.DropDownList("Prioridade", EnumHelper.GetSelectList(typeof(Prioridade)), "Selecione", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.Prioridade, "", new { @class = "text-danger" })
             </div>
         </div>
 

@@ -168,9 +168,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Tarefas\Index.cshtml" />
     <Content Include="Views\Tarefas\Details.cshtml" />
-    <Content Include="Views\Tarefas\Create.cshtml" />
     <Content Include="Views\Tarefas\Edit.cshtml" />
     <Content Include="Views\Tarefas\Delete.cshtml" />
+    <Content Include="Views\Tarefas\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
