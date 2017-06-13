@@ -18,7 +18,7 @@ namespace AspNetFundamentos.Capitulo04.Mvc.Controllers
 
         public ActionResult Portfolio()
         {
-            const string diretorioImagens = "/Content/Imagens/Portfolio";
+            const string diretorioImagens = "~/Content/Imagens/Portfolio";
             var caminhos = Directory.EnumerateFiles(Server.MapPath(diretorioImagens));
 
             var porftolioViewModel = new PorftolioViewModel();

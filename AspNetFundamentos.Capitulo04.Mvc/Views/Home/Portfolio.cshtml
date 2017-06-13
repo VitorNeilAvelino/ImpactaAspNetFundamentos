@@ -22,8 +22,8 @@
 <div class="row">
     @foreach (var caminho in Model.CaminhosImagem)
     {
-        <a href="@caminho" class="fancybox">
-            <img src="@caminho" class="img-responsive" alt="@caminho" />
+        <a href="@Url.Content(caminho)" class="fancybox">
+            <img src="@Url.Content(caminho)" class="img-responsive" alt="@caminho" />
         </a>
     }
 </div>

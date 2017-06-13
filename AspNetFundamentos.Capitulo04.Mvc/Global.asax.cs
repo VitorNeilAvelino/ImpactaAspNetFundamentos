@@ -13,12 +13,12 @@ namespace AspNetFundamentos.Capitulo04.Mvc
             RouteConfig.RegisterRoutes(RouteTable.Routes);
 
             BundleTable.EnableOptimizations = true;
-            BundleConfig.RegisterBundles(BundleTable.Bundles);            
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
 
-        protected void Session_Start()
-        {
-            Session.Timeout = 600;
-        }
+        //protected void Session_Start()
+        //{
+        //    Session.Timeout = 600;
+        //}
     }
 }
