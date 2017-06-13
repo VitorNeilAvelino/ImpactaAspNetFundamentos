@@ -116,5 +116,12 @@ namespace AspNetFundamentos.Capitulo07.AcessoDados.Controllers
                 return View(tarefaViewModel);
             }
         }
+        
+        public JsonResult ObterNaoConcluidas(int prioridade)
+        {
+            //http://localhost:54759/Tarefas/ObterNaoConcluidas?prioridade=3
+
+            return Json(_tarefaRepositorio.SelecionarNaoConcluidas((Prioridade)prioridade), JsonRequestBehavior.AllowGet);
+        }
     }
 }

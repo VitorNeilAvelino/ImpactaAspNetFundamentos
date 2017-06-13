@@ -47,17 +47,30 @@ namespace Impacta.AspNet.Repositorios.SqlServer
 
         public List<Tarefa> Selecionar()
         {
+            return Selecionar("TarefaSelecionar");
+        }
+
+        public List<Tarefa> SelecionarNaoConcluidas(Prioridade prioridade)
+        {
+            return Selecionar("TarefaSelecionarNaoConcluidas", new SqlParameter("Prioridade", prioridade));
+        }
+
+        private List<Tarefa> Selecionar(string nomeProcedure, params SqlParameter[] parametros)
+        {
             var tarefas = new List<Tarefa>();
 
             using (var conexao = new SqlConnection(_stringConexao))
             {
                 conexao.Open();
 
-                const string nomeProcedure = "TarefaSelecionar";
-
                 using (var comando = new SqlCommand(nomeProcedure, conexao))
                 {
                     comando.CommandType = CommandType.StoredProcedure;
+
+                    if (parametros != null)
+                    {
+                        comando.Parameters.AddRange(parametros);
+                    }
 
                     using (var registro = comando.ExecuteReader())
                     {

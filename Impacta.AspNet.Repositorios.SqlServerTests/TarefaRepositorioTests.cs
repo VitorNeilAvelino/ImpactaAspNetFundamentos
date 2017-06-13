@@ -48,6 +48,17 @@ namespace Impacta.AspNet.Repositorios.SqlServerTests
             }
         }
 
+        [TestMethod()]
+        public void SelecionarTarefasNaoConcluidasTest()
+        {
+            var tarefas = _tarefaRepositorio.SelecionarNaoConcluidas(Prioridade.Baixa);
+
+            foreach (var tarefa in tarefas)
+            {
+                Console.WriteLine($"{tarefa.Id}|{tarefa.Nome}|{tarefa.Prioridade}|{tarefa.Concluida}|{tarefa.Observacoes}");
+            }
+        }
+
         [TestMethod]
         public void ExcluirTest()
         {
