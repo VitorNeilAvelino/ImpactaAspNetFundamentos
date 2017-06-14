@@ -20,15 +20,17 @@ function exibirTarefasNaoConcluidas(response) {
     $("#tarefasPopover").popover({ content: obterGridTarefas(response), html: true }).popover("show");
 }
 
-function obterGridTarefas(response) {
-    var html = "<div class='row'>";
+function obterGridTarefas(tarefas) {
+    var html = "<table class='table table-striped'>";
 
-    $(response).each(
+    $(tarefas).each(
         function (i) {
-            html += "<div class='col-md-6'>" + response[i].Nome + "</div>";
-            html += "<div class='col-md-6'>" + response[i].Observacoes + "</div>";
+            html += "<tr>";
+            html += "<td>" + tarefas[i].Nome + "</td>";
+            html += "<td>" + tarefas[i].Observacoes + "</td>";
+            html += "</tr>";
         }
-        );
+    );
 
-    return html + "</div>";
+    return html + "</table>";
 }
