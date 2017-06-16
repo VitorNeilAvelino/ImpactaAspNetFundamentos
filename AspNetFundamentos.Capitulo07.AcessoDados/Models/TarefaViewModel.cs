@@ -1,5 +1,7 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 using Impacta.AspNet.Dominio;
 
 namespace AspNetFundamentos.Capitulo07.AcessoDados.Models
@@ -19,7 +21,7 @@ namespace AspNetFundamentos.Capitulo07.AcessoDados.Models
             Prioridade = tarefa.Prioridade;
             Concluida = tarefa.Concluida;
             Observacoes = tarefa.Observacoes;
-        }
+        }   
 
         public int Id { get; set; }
 
@@ -27,7 +29,7 @@ namespace AspNetFundamentos.Capitulo07.AcessoDados.Models
         public string Nome { get; set; }
 
         [Required]
-        public Prioridade Prioridade { get; set; }
+        public Prioridade? Prioridade { get; set; }
 
         [Required]
         [DisplayName("Concluída")]

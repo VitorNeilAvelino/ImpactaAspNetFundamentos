@@ -30,3 +30,7 @@ textarea {
     .popover .table {
         width: 500px;
     }
+
+.d-inline {
+    display: inline;
+}

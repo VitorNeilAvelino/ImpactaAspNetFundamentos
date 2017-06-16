@@ -62,7 +62,7 @@ namespace AspNetFundamentos.Capitulo07.AcessoDados.Controllers
             tarefa.Id = tarefaViewModel.Id;
             tarefa.Nome = tarefaViewModel.Nome;
             tarefa.Observacoes = tarefaViewModel.Observacoes;
-            tarefa.Prioridade = tarefaViewModel.Prioridade;
+            tarefa.Prioridade = tarefaViewModel.Prioridade.Value;
 
             return tarefa;
         }
@@ -116,10 +116,15 @@ namespace AspNetFundamentos.Capitulo07.AcessoDados.Controllers
                 return View(tarefaViewModel);
             }
         }
-        
-        public JsonResult ObterNaoConcluidas(int prioridade)
+
+        public JsonResult ObterNaoConcluidas(int? prioridade)
         {
             //http://localhost:54759/Tarefas/ObterNaoConcluidas?prioridade=3
+
+            if (!prioridade.HasValue)
+            {
+                return null;
+            }
 
             return Json(_tarefaRepositorio.SelecionarNaoConcluidas((Prioridade)prioridade), JsonRequestBehavior.AllowGet);
         }

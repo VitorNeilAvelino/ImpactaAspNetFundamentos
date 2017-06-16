@@ -5,18 +5,22 @@ function inicializar() {
 }
 
 function obterTarefasNaoConcluidas() {
-    $("#tarefasPopover").popover("destroy");
-
     $.ajax({
         url: "/Tarefas/ObterNaoConcluidas",
-        data: { prioridade: $("#Prioridade").val() },
-        success: function (response) {
-            exibirTarefasNaoConcluidas(response);
-        }
-    });
+        type: "get",
+        data: { prioridade: $("#Prioridade").val() }
+    })
+    .done(function (response) { exibirTarefasNaoConcluidas(response) }) // success
+    .fail(function (response) { }) // error
+    .always(function (response) { }); // complete
 }
 
 function exibirTarefasNaoConcluidas(response) {
+    if (response === "") {
+        $("#tarefasPopover").popover("destroy");
+        return;
+    }
+
     $("#tarefasPopover").popover({ content: obterGridTarefas(response), html: true }).popover("show");
 }
 

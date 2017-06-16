@@ -27,10 +27,11 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Prioridade, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("Prioridade", EnumHelper.GetSelectList(typeof(Prioridade)), "Selecione", new { @class = "form-control pull-left" })
+                @Html.EnumDropDownListFor(m => m.Prioridade, "Selecione", new { @class = "form-control d-inline" })
                 <button type="button" id="tarefasPopover" data-toggle="popover" title="Tarefas relacionadas" class="btn btn-default btn-sm">
                     <span class="glyphicon glyphicon-tasks"></span>
                 </button>
+                <br />
                 @Html.ValidationMessageFor(model => model.Prioridade, "", new { @class = "text-danger" })
             </div>
         </div>
