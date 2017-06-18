@@ -7,7 +7,7 @@ function inicializar() {
 function obterTarefasNaoConcluidas() {
     $.ajax({
         url: "/Tarefas/ObterNaoConcluidas",
-        type: "get",
+        method: "get", // method ou type - get é o default
         data: { prioridade: $("#Prioridade").val() }
     })
     .done(function (response) { exibirTarefasNaoConcluidas(response) }) // success
@@ -16,12 +16,12 @@ function obterTarefasNaoConcluidas() {
 }
 
 function exibirTarefasNaoConcluidas(response) {
-    if (response === "") {
-        $("#tarefasPopover").popover("destroy");
-        return;
-    }
+    //$("#tarefasPopover").popover("destroy");
 
-    $("#tarefasPopover").popover({ content: obterGridTarefas(response), html: true }).popover("show");
+    $("#tarefasPopover")
+        .popover("destroy")
+        .popover({ content: obterGridTarefas(response), html: true })
+        .popover("show");
 }
 
 function obterGridTarefas(tarefas) {

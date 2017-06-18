@@ -138,7 +138,7 @@ namespace Impacta.AspNet.Repositorios.SqlServer
             tarefa.Nome = registro["Nome"].ToString();
             tarefa.Prioridade = (Prioridade)registro["Prioridade"];
             tarefa.Concluida = Convert.ToBoolean(registro["Concluida"]);
-            tarefa.Observacoes = registro["Observacoes"].ToString();
+            tarefa.Observacoes = Convert.ToString(registro["Observacoes"]);
 
             return tarefa;
         }

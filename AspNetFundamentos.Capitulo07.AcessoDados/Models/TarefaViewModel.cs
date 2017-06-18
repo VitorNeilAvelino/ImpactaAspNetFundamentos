@@ -26,9 +26,11 @@ namespace AspNetFundamentos.Capitulo07.AcessoDados.Models
         public int Id { get; set; }
 
         [Required]
+        [StringLength(200)]
         public string Nome { get; set; }
 
         [Required]
+        [EnumDataType(typeof(Prioridade))]
         public Prioridade? Prioridade { get; set; }
 
         [Required]
@@ -36,6 +38,7 @@ namespace AspNetFundamentos.Capitulo07.AcessoDados.Models
         public bool Concluida { get; set; }
 
         [Display(Name = "Observações")]
+        [StringLength(1000)]
         public string Observacoes { get; set; }
     }
 }
