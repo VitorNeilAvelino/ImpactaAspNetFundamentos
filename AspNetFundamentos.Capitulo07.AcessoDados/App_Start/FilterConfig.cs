@@ -1,5 +1,5 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using AspNetFundamentos.Capitulo07.AcessoDados.Filtros;
 
 namespace AspNetFundamentos.Capitulo07.AcessoDados
 {
@@ -7,7 +7,8 @@ namespace AspNetFundamentos.Capitulo07.AcessoDados
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            //filters.Add(new HandleErrorAttribute());
+            filters.Add(new LogErrorAttribute());
         }
     }
 }
