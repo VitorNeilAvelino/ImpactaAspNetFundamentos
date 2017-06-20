@@ -117,7 +117,7 @@ namespace AspNetFundamentos.Capitulo07.AcessoDados.Controllers
             }
         }
 
-        public JsonResult ObterNaoConcluidas(int? prioridade)
+        public JsonResult ObterNaoConcluidas(Prioridade? prioridade)
         {
             //http://localhost:54759/Tarefas/ObterNaoConcluidas?prioridade=3
 
@@ -126,7 +126,7 @@ namespace AspNetFundamentos.Capitulo07.AcessoDados.Controllers
                 return null;
             }
 
-            return Json(_tarefaRepositorio.SelecionarNaoConcluidas((Prioridade)prioridade), JsonRequestBehavior.AllowGet);
+            return Json(_tarefaRepositorio.SelecionarNaoConcluidas(prioridade.Value), JsonRequestBehavior.AllowGet);
         }
     }
 }
