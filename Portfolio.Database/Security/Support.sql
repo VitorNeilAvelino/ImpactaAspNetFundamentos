@@ -1,0 +1,2 @@
+﻿CREATE USER [Support] FOR LOGIN [CSSPL054W\Support];
+

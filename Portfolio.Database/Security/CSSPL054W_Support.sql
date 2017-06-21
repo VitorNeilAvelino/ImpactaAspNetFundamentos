@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [CSSPL054W\Support]
+    FROM WINDOWS WITH DEFAULT_DATABASE = [Portfolio], DEFAULT_LANGUAGE = [us_english];
+
