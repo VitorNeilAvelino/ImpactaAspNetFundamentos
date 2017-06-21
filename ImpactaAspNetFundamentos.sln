@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Impacta.AspNet.Repositorios
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetFundamentos.Capitulo07.AcessoDados", "AspNetFundamentos.Capitulo07.AcessoDados\AspNetFundamentos.Capitulo07.AcessoDados.csproj", "{7E694D48-0191-4CF0-8E56-CA084228362C}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Pessoal.Database", "Pessoal.Database\Pessoal.Database.sqlproj", "{BED26B17-D5E9-484F-8802-038C5B4B21A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,12 @@ Global
 		{7E694D48-0191-4CF0-8E56-CA084228362C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E694D48-0191-4CF0-8E56-CA084228362C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E694D48-0191-4CF0-8E56-CA084228362C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED26B17-D5E9-484F-8802-038C5B4B21A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BED26B17-D5E9-484F-8802-038C5B4B21A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BED26B17-D5E9-484F-8802-038C5B4B21A9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BED26B17-D5E9-484F-8802-038C5B4B21A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BED26B17-D5E9-484F-8802-038C5B4B21A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BED26B17-D5E9-484F-8802-038C5B4B21A9}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,5 +70,6 @@ Global
 		{C08E07F7-6C25-4DFF-8FCE-CBC5167D0B2A} = {DADDB090-BF76-4858-A769-C5D8855CBFE2}
 		{EB6B0003-C921-4DC2-B276-51C46030888E} = {DADDB090-BF76-4858-A769-C5D8855CBFE2}
 		{7E694D48-0191-4CF0-8E56-CA084228362C} = {DADDB090-BF76-4858-A769-C5D8855CBFE2}
+		{BED26B17-D5E9-484F-8802-038C5B4B21A9} = {DADDB090-BF76-4858-A769-C5D8855CBFE2}
 	EndGlobalSection
 EndGlobal
