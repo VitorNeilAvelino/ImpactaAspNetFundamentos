@@ -242,3 +242,5 @@ ModelManifest.xml
 .fake/
 /AspNetFundamentos.Capitulo03.WebForms/Candidatos/Cadastro.csv
 /AspNetFundamentos.Capitulo04.Mvc/Content/Imagens/Portfolio
+/Pessoal.Database/Pessoal.Database.jfm
+/Portfolio.Database/Portfolio.Database.jfm
