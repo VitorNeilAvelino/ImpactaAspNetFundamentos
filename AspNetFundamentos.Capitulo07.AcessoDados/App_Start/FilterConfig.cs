@@ -9,7 +9,6 @@ namespace AspNetFundamentos.Capitulo07.AcessoDados
         {
             //filters.Add(new HandleErrorAttribute());
             filters.Add(new LogErrorAttribute());
-            //filters.Add(new AuthorizeAttribute());
         }
     }
 }

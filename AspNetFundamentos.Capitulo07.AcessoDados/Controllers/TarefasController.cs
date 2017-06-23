@@ -6,11 +6,12 @@ using Impacta.AspNet.Repositorios.SqlServer;
 
 namespace AspNetFundamentos.Capitulo07.AcessoDados.Controllers
 {
+    [Authorize]
     public class TarefasController : Controller
     {
         private readonly TarefaRepositorio _tarefaRepositorio = new TarefaRepositorio();
 
-        // GET: Tarefas
+        [AllowAnonymous]
         public ActionResult Index()
         {
             var tarefas = _tarefaRepositorio.Selecionar();

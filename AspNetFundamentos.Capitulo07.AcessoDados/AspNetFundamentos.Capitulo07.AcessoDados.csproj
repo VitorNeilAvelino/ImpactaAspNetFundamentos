@@ -148,7 +148,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\UsuariosController.cs" />
     <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\TarefaViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -198,7 +198,8 @@
     <Content Include="Views\Tarefas\Edit.cshtml" />
     <Content Include="Views\Tarefas\Delete.cshtml" />
     <Content Include="Views\Tarefas\Create.cshtml" />
-    <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Usuarios\Login.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

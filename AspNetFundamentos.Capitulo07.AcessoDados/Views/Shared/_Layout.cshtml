@@ -24,9 +24,11 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Tarefas", "Index", "Tarefas")</li>
-                    <li>@Html.ActionLink("Login", "Index", "Login")</li>
-                    <li>@User.Identity.Name</li>
+                    @*<li>@Html.ActionLink("Login", "Index", "Login")</li>
+                    <li>@User.Identity.Name</li>*@
                 </ul>
+                @Html.Partial("_LoginPartial")
+
             </div>
         </div>
     </div>
