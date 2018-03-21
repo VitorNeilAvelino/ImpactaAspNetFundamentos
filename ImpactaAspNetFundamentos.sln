@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetFundamentos.Capitulo02.WebPages", "AspNetFundamentos.Capitulo02.WebPages\AspNetFundamentos.Capitulo02.WebPages.csproj", "{48F4046B-4981-4026-81E4-3B714BC398BE}"
 EndProject
@@ -22,6 +22,8 @@ EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Pessoal.Database", "Pessoal.Database\Pessoal.Database.sqlproj", "{BED26B17-D5E9-484F-8802-038C5B4B21A9}"
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Portfolio.Database", "Portfolio.Database\Portfolio.Database.sqlproj", "{5EA88E08-57A4-470E-A64B-45498287A8A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pessoal.AspNet.WebForms", "Pessoal.AspNet.WebForms\Pessoal.AspNet.WebForms.csproj", "{ECF73135-EEAC-46A8-81DA-F89ADBB83AB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{5EA88E08-57A4-470E-A64B-45498287A8A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5EA88E08-57A4-470E-A64B-45498287A8A8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5EA88E08-57A4-470E-A64B-45498287A8A8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{ECF73135-EEAC-46A8-81DA-F89ADBB83AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF73135-EEAC-46A8-81DA-F89ADBB83AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF73135-EEAC-46A8-81DA-F89ADBB83AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF73135-EEAC-46A8-81DA-F89ADBB83AB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,5 +85,9 @@ Global
 		{EB6B0003-C921-4DC2-B276-51C46030888E} = {DADDB090-BF76-4858-A769-C5D8855CBFE2}
 		{7E694D48-0191-4CF0-8E56-CA084228362C} = {DADDB090-BF76-4858-A769-C5D8855CBFE2}
 		{BED26B17-D5E9-484F-8802-038C5B4B21A9} = {DADDB090-BF76-4858-A769-C5D8855CBFE2}
+		{ECF73135-EEAC-46A8-81DA-F89ADBB83AB4} = {DADDB090-BF76-4858-A769-C5D8855CBFE2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0848AC5A-1F62-4190-9F4C-ECB3A6187978}
 	EndGlobalSection
 EndGlobal
