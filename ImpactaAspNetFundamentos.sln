@@ -25,6 +25,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Portfolio.Database", "Portf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pessoal.AspNet.WebForms", "Pessoal.AspNet.WebForms\Pessoal.AspNet.WebForms.csproj", "{ECF73135-EEAC-46A8-81DA-F89ADBB83AB4}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Loja.Database", "Loja.Database\Loja.Database.sqlproj", "{BD875CF0-E533-4B1A-B786-599BC429FC68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,12 @@ Global
 		{ECF73135-EEAC-46A8-81DA-F89ADBB83AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECF73135-EEAC-46A8-81DA-F89ADBB83AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECF73135-EEAC-46A8-81DA-F89ADBB83AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD875CF0-E533-4B1A-B786-599BC429FC68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD875CF0-E533-4B1A-B786-599BC429FC68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD875CF0-E533-4B1A-B786-599BC429FC68}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BD875CF0-E533-4B1A-B786-599BC429FC68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD875CF0-E533-4B1A-B786-599BC429FC68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD875CF0-E533-4B1A-B786-599BC429FC68}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
