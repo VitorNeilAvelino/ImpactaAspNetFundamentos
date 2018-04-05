@@ -3,19 +3,23 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Nova tarefa</h1>
     <hr />
+    <asp:ValidationSummary ID="tarefaValidationSummary" runat="server" CssClass="text-danger" />
     <table >
         <tr>
             <td style="width: 126px">Nome</td>
             <td>
                 <asp:TextBox ID="nomeTextBox" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="nomeRequiredFieldValidator" runat="server" ControlToValidate="nomeTextBox" CssClass="text-danger" Display="Dynamic" ErrorMessage="Nome é obrigatório">(!)</asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
             <td style="width: 126px">Prioridade</td>
             <td>
                 <asp:DropDownList ID="prioridadeDropDownList" runat="server" DataSourceID="prioridadeObjectDataSource" AppendDataBoundItems="True">
-                    <asp:ListItem>Selecione</asp:ListItem>
-                </asp:DropDownList><asp:ObjectDataSource ID="prioridadeObjectDataSource" runat="server" SelectMethod="ObterPrioridades" TypeName="Pessoal.AspNet.WebForms.Tarefas.Create"></asp:ObjectDataSource>
+                    <asp:ListItem Value="0">Selecione</asp:ListItem>
+                </asp:DropDownList>
+                <asp:RequiredFieldValidator ID="prioridadeRequiredFieldValidator" runat="server" ControlToValidate="prioridadeDropDownList" CssClass="text-danger" Display="Dynamic" ErrorMessage="Prioridade é obrigatória" InitialValue="0">(!)</asp:RequiredFieldValidator>
+                <asp:ObjectDataSource ID="prioridadeObjectDataSource" runat="server" SelectMethod="ObterPrioridades" TypeName="Pessoal.AspNet.WebForms.Tarefas.Create"></asp:ObjectDataSource>
             </td>
         </tr>
         <tr>

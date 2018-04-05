@@ -13,6 +13,15 @@ namespace Pessoal.AspNet.WebForms.Tarefas {
     public partial class Create {
         
         /// <summary>
+        /// tarefaValidationSummary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary tarefaValidationSummary;
+        
+        /// <summary>
         /// nomeTextBox control.
         /// </summary>
         /// <remarks>
@@ -22,6 +31,15 @@ namespace Pessoal.AspNet.WebForms.Tarefas {
         protected global::System.Web.UI.WebControls.TextBox nomeTextBox;
         
         /// <summary>
+        /// nomeRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator nomeRequiredFieldValidator;
+        
+        /// <summary>
         /// prioridadeDropDownList control.
         /// </summary>
         /// <remarks>
@@ -29,6 +47,15 @@ namespace Pessoal.AspNet.WebForms.Tarefas {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList prioridadeDropDownList;
+        
+        /// <summary>
+        /// prioridadeRequiredFieldValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator prioridadeRequiredFieldValidator;
         
         /// <summary>
         /// prioridadeObjectDataSource control.
